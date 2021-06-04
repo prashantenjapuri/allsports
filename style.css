@@ -1,0 +1,404 @@
+/* The page is NOT responsive. You can implement responsiveness yourself if you wanna have some fun 😃 */
+
+:root {
+  --color-primary: #ff9a5b;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #e58a51;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #e58a51, #ffc29c);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  /* line-height: 1.9; */
+  background-color: #fff4ee;
+}
+
+/* btn */
+.btn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-darker);
+}
+
+.btn--text {
+  display: inline-block;
+  background: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a.btn--text:hover {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.highlight {
+  position: relative;
+}
+
+.active-custom {
+  /* background-color: var(--color-primary); */
+  /* border-radius: 15px; */
+  border-bottom: solid 1px var(--color-primary);
+}
+
+.highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
+}
+
+/* .a-color {
+  color: var(--color-primary);
+  font-size: 18px;
+} */
+
+/* .b-color {
+  background-color: var(--color-primary);
+  font-size: 18px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.b-color :hover {
+  background-color: var(--color-primary-darker);
+} */
+
+.logo-text {
+  font-size: 27px;
+  color: #ff9a5b !important;
+  font-family: "Lobster", cursive;
+}
+
+.navbar {
+  padding: 0.2rem 1rem;
+  background-color: #f3f3f3 !important;
+}
+
+.navbar {
+  box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: #222 !important;
+}
+
+.nav-btns {
+  background-color: #ff9a5b;
+  border-radius: 3rem;
+}
+
+.navbar-toggler {
+  background-color: #ff9a5b;
+  border-color: #444;
+  border-width: 1px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(68,68,68,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* nav sign up button bg color */
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .nav-register-btn {
+    background-color: #f3f3f3;
+  }
+}
+
+/* common container */
+.container-custom {
+  border-bottom: 1px solid #ddd;
+  /* margin-top: 100px; */
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.row-mb {
+  margin-bottom: 100px;
+}
+
+/* first section */
+.main-heading {
+  font-size: 3.5rem;
+  /* line-height: 1.35; */
+  font-weight: bold;
+}
+
+.header-section {
+  margin-top: 85px;
+  margin-bottom: 100px;
+}
+
+/* section-news-1 */
+.section__description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.section__header {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.img-news {
+  border-radius: 16px;
+}
+
+/* BLOGS */
+.blogs {
+  /* max-width: 100rem; */
+  margin: 5rem auto 0 auto;
+  /* background-color: #fff; */
+}
+
+.blogs__tab-container {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.blogs__tab {
+  margin-right: 2.5rem;
+  /* transform: translateY(-50%); */
+}
+
+/* .blogs__tab:active {
+  border: 3px solid #000000;
+} */
+/* 
+.blogs__tab--2:not(:active) {
+  background-color: #ffd6bd;
+} */
+
+.blogs__tab--2 {
+  background-color: #ffd6bd;
+}
+
+.blogs__tab:focus {
+  outline: none;
+}
+
+.blogs__tab--1 {
+  background-color: var(--color-secondary);
+}
+
+.blogs__tab--1:hover {
+  background-color: var(--color-secondary-darker);
+}
+
+.blogs__tab--3 {
+  background-color: var(--color-tertiary);
+  /* margin: 0; */
+}
+
+.blogs__tab--3:hover {
+  background-color: var(--color-tertiary-darker);
+}
+
+.blogs__content {
+  display: none;
+  /* JUST PRESENTATIONAL */
+  font-size: 1.3rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.blogs__content--active {
+  display: flex;
+  /* grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem; */
+}
+
+.blogs__header {
+  font-size: 1.8rem;
+  /* align-self: center; */
+}
+
+.blogs__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container-cus {
+  max-width: 500px;
+  /* background-color: #444; */
+}
+
+.contactdiv {
+  padding-top: 50px;
+}
+
+/* tabbed components */
+/* .tab-football {
+  background-color: #ffda4e !important;
+}
+
+.tab-cricket {
+  background-color: #ffb688 !important;
+}
+
+.tab-basketball {
+  background-color: #ff797e !important;
+} */
+
+.sports-tab {
+  background-color: #444;
+  /* border: solid 2px var(--color-primary) !important; */
+  color: #fff4ee !important;
+}
+
+/* active tab */
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  /* border: 2px solid #000000; */
+  /* transform: translateY(-20%); */
+  background-color: var(--color-primary) !important;
+  /* border: solid 2px #444 !important; */
+  color: #444 !important;
+  box-shadow: rgba(171, 183, 183, 0.5) 0px 10px 30px;
+}
+
+.tab-pane.row.active {
+  display: flex;
+}
+
+.nav-tabs {
+  border: unset;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 5em;
+}
+
+/* .bottom-line {
+  margin-bottom: 100px;
+} */
+
+input.error {
+  border: 1px solid red;
+}
+
+label.error {
+  color: red;
+  margin-left: 42%;
+  display: none !important;
+}
+
+textarea.error {
+  border: 1px solid red;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #ff9a5b !important;
+  box-shadow: 0 0 10px #ff9a5b !important;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: #ff9a5b !important;
+  box-shadow: 0 0 10px #ff9a5b !important;
+}
+/* 
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ff9a5b !important;
+} */
+
+/* contact us */
+.contact-icon {
+  color: var(--color-primary);
+}
+
+/* footer */
+.footer-container {
+  background-color: var(--color-primary);
+  color: #444 !important;
+}
+
+.footer-icon {
+  color: #f3f3f3 !important;
+}
+
+.footer-icon:hover {
+  color: #444 !important;
+}
+
+.footer-link {
+  color: #444;
+}
+
+.footer-link:hover {
+  color: #f3f3f3;
+}
+
+/* gallery images */
+.g-img {
+  max-height: 500px;
+}

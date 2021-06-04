@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js" integrity="sha512-RdSPYh1WA6BF0RhpisYJVYkOyTzK4HwofJ3Q7ivt/jkpW6Vc8AurL1R+4AUcvn9IwEKAPm/fk7qFZW3OuiUDeg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>allSports | Where all Sports meet</title>
+
+    <script defer src="script.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md">
+        <a class="navbar-brand pl-md-5" href="#">
+          <img class="navbar-image"
+            src="images/logo_t.png"
+            width="50px"
+            height="50px"
+            class=""
+            alt=""
+          />
+          <span class="navbar-text logo-text px-md-3">allSports</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ml-auto">
+            
+            <a href="#div-home" class="link-home navlink-c nav-item px-md-4 nav-link ">Home</a>
+            <a href="#div-news" class="link-news navlink-c nav-item px-md-4 nav-link">News</a>
+            <!-- <button class="link-blog"> -->
+            <a href="#div-gallery" class="link-gallery navlink-c nav-item px-md-4 nav-link">Gallery</a>
+
+            <a href="#div-blog" class="link-blog navlink-c nav-item px-md-4 nav-link">Blog</a>
+            <!-- </button> -->
+            <a href="#div-cont" class="link-cont navlink-c nav-item px-md-4 nav-link">Contact Us</a>
+            <a href="#" data-toggle="modal" data-target="#modalLoginForm" class="nav-btns nav-register-btn btn--show-modal nav-item px-md-4 nav-link">Register</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="forActiveNav container container-custom" id="div-home">
+        <div class="row header-section">
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-7 mt-5 text-left">
+            <h1 class="main-heading pb-4">
+              Where <span class="highlight">all Sports</span> meet
+            </h1>
+            <h3 class="pb-4">A simpler experience for all sports events.</h3>
+            
+            <a class="btn--text links-news nav-item px-md-4">Learn more &DownArrow;</a>
+          </div>
+
+          <div class="col-sm-12 col-md-5 mt-2 text-center">
+            <img
+              src="images/all-sports-banner.png"
+              width=""
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="forActiveNav container container-custom" id="div-news">
+      <h3 class="section__description pb-4">LATEST NEWS</h3>
+      <div class="container">
+        <div class="row">
+          <h3 class="section__header news-section-header-1">
+            Jason Roy signs up with Sunrisers Hyderabad as replacement for
+            Mitchell Marsh.
+          </h3>
+        </div>
+        <div class="row row-mb">
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-6 mt-5 text-left">
+            <img src="images/jason_roy.jpeg" class="img-fluid img-news img-news-1" alt="" />
+          </div>
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-6 mt-5 text-left">
+            <h4 class="publishedDate-1">March 31, 2021</h4>
+            <p class="newsContent-1">
+              Sunrisers Hyderabad have signed up England batsman Jason Roy as replacement for Mitchell Marsh, who has made himself unavailable for the entire season owing to personal reasons. <br></br>
+              Marsh, who made his Indian Premier League debut in 2010 has played a total of 21 IPL games. His replacement, Jason Roy made his IPL debut in 2017 playing for Gujarat Lions & later featured for Delhi Daredevils (now Delhi Capitals) in the 2018 IPL edition. He has played a total of 8 matches and scored 179 runs with one half-century to his name.
+            </p>
+            <!-- <a href="#" target="_blank" class="btn--text news1-btn">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <h3 class="section__header news-section-header-2">
+           Porto vs Chelsea games to be played in Seville.
+          </h3>
+        </div>
+        <div class="row row-mb">
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-6 mt-5 text-left">
+            <img src="images/porto vs chelsea.jpeg" class="img-fluid img-news img-news-2" alt="" />
+          </div>
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-6 mt-5 text-left">
+            <h4 class="publishedDate-2">April 1, 2021</h4>
+            <p class="newsContent-2">
+              Both legs of the quarter-final are to be played at the Estadio Ramón Sánchez-Pizjuán. <br></br>
+              UEFA is able to officially confirm that the UEFA Champions League quarter-final first and second leg matches involving Porto and Chelsea will now both be played at the Estadio Ramón Sánchez-Pizjuán in Seville. The dates of the matches (7 April and 13 April 2021) and the kick-off times (21:00CET) will remain the same.
+            </p>
+            <!-- <a href="#" target="_blank" class="btn--text news2-btn">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <h3 class="section__header news-section-header-3">
+            Philadelphia 76ers hold off Minnesota Timberwolves in Joel Embiid's return to action.
+          </h3>
+        </div>
+        <div class="row row-mb">
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-6 mt-5 text-left">
+            <img src="images/embid.png" class="img-fluid img-news img-news-3" alt="" />
+          </div>
+          <div class="col-sm-12 mb-5 mb-md-0 col-md-6 mt-5 text-left">
+            <h4 class="publishedDate-3">April 4, 2021</h4>
+            <p class="newsContent-3">
+              After missing 10 games with a bone bruise in his left knee, Joel Embiid impressed in his return to the 76ers lineup, dropping 24 points in 28 minutes as they climb back to the top of the Eastern Conference. <br></br>
+              
+  Joel Embiid returned to the Philadelphia 76ers lineup after missing 10 games due to a bone bruise in his left knee and the MVP candidate picked up right where he left off.
+  
+  In 28 minutes on court, he poured in 24 points, eight rebounds and two blocks to help the 76ers to a 122-113 win at home and their eighth straight win over the Minnesota Timberwolves.
+            </p>
+            <!-- <a href="#" target="_blank" class="btn--text news3-btn">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+<!-- <div id="div-gallery" class="carousel slide forActiveNav container container-custom" data-ride="carousel">
+  <h3 class="section__description">GALLERY</h3>
+  <ol class="carousel-indicators">
+    <li data-target="#div-gallery" data-slide-to="0" class="active"></li>
+    <li data-target="#div-gallery" data-slide-to="1"></li>
+    <li data-target="#div-gallery" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="g-img carousel-item active">
+      <img class="iii d-block img-fluid" src="images/gallery1.jpg" alt="First slide">
+    </div>
+    <div class="g-img carousel-item">
+      <img class="iii d-block img-fluid" src="images/gallery2.jpg" alt="Second slide">
+    </div>
+    <div class="g-img carousel-item">
+      <img class="iii d-block img-fluid" src="images/gallery4.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#div-gallery" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#div-gallery" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+	<div class="forActiveNav container container-custom" id="div-gallery">
+  <h3 class="section__description">GALLERY</h3>
+		<div class="carousel slide" id="div-gallery" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#div-gallery" data-slide-to="0" class="active"></li>
+				<li data-target="#div-gallery" data-slide-to="1"></li>
+				<li data-target="#div-gallery" data-slide-to="2"></li>
+				<li data-target="#div-gallery" data-slide-to="3"></li>
+			</ol><!-- /.carousel-indicators -->
+			
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block img-fluid" src="images/gallery1.jpg" alt="">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="g-header">Staples Center</h2>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block img-fluid" src="images/gallery2.jpg" alt="">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="g-header">Groupama Stadium</h2>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block img-fluid" src="images/gallery3.jpg" alt="">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="g-header">England Cricket Ground</h2>
+				</div>
+        </div>
+				<div class="carousel-item">
+					<img src="images/gallery4.jpg" alt="" class="d-block img-fluid">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="g-header">Bernabeu</h2>
+					</div>
+				</div>
+			</div><!-- /.carousel-inner -->
+			
+			<a href="#div-gallery" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="sr-only" aria-hidden="true">Prev</span>
+			</a>
+			<a href="#div-gallery" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="sr-only" aria-hidden="true">Next</span>
+			</a>
+		</div><!-- /.carousel -->
+	</div><!-- /.container -->
+    
+
+    <div class="forActiveNav container container-custom" id="div-blog">
+      <div>
+        <h3 class="section__description">BLOGS</h3>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="container blogs">
+        <div class="row text-center nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="col-md-4 nav-item sports-tab tab-football nav-link active" id="nav-football-tab" data-toggle="tab" href="#nav-football" role="tab" aria-controls="nav-football" aria-selected="true">Football</a>
+          <a class="col-md-4 nav-item sports-tab tab-cricket nav-link" id="nav-cricket-tab" data-toggle="tab" href="#nav-cricket" role="tab" aria-controls="nav-cricket" aria-selected="false">Cricket</a>
+          <a class="col-md-4 nav-item sports-tab tab-basketball nav-link" id="nav-basketball-tab" data-toggle="tab" href="#nav-basketball" role="tab" aria-controls="nav-basketball" aria-selected="false">Basketball</a>
+        </div>
+      </div>
+      
+      <div class="tab-content container bottom-line" id="nav-tabContent">
+        
+        <div class="tab-pane row pt-5 fade show active" id="nav-football" role="tabpanel" aria-labelledby="nav-football-tab">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid rounded border" src="images/football-2.jpg" alt="football">
+          </div>
+          <div class="col-md-9 text-left">
+          <h5 class="blogs__header">
+            Transfer money to anyone, instantly! No fees, no BS.
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <button class="btn--text" type="button" data-toggle="modal" data-target="#modalBlogFootball">
+            Read more
+          </button>
+          </div>
+        </div>
+        
+        <div class="tab-pane row pt-5 fade" id="nav-cricket" role="tabpanel" aria-labelledby="nav-cricket-tab">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid rounded border" src="images/cricket2.jpg" alt="cricket">
+          </div>
+          <div class="col-md-9 text-left">
+          <h5 class="blogs__header">
+            Buy a home or make your dreams come true, with instant loans.
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <button class="btn--text" type="button" data-toggle="modal" data-target="#modalBlogCricket">
+            Read more
+          </button>
+          </div>
+        </div>
+      
+        <div class="tab-pane row pt-5 fade" id="nav-basketball" role="tabpanel" aria-labelledby="nav-basketball-tab">
+          <div class="col-md-3 text-center">
+            <img class="img-fluid rounded border" src="images/basketball4.jpg" alt="basketball">
+          </div>
+          <div class="col-md-9 text-left">
+          <h5 class="blogs__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <button class="btn--text" type="button" data-toggle="modal" data-target="#modalBlogBasketball">
+            Read more
+          </button>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    
+<!-- contact us -->
+
+<div class="forActiveNav mb-4 container contactdiv" id="div-cont">
+
+  <!--Section heading-->
+  <h2 class="section__description h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <div class="col-md-12 text-left" >
+                <!--<button class="btn register-button">Register &rarr;</button>-->
+                <input class="btn" id="contact-form-btn" type="submit" value="Send"/>
+                </div>
+
+          </form>
+
+          <!-- <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div> -->
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="contact-icon fas fa-map-marker-alt fa-2x"></i>
+                  <p>CST, 400001, Mumbai</p>
+              </li>
+
+              <li><i class="contact-icon fas fa-phone mt-4 fa-2x"></i>
+                  <p>+91-7493473939</p>
+              </li>
+
+              <li><i class="contact-icon fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contact@allsports.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</div >
+
+<!-- Footer -->
+<footer class="page-footer footer-container font-small special-color-dark pt-1">
+
+  <!-- Footer Elements -->
+  <div class="container pt-2">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="footer-icon fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="footer-icon fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="footer-icon fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="footer-icon fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1">© 2020 Copyright:
+    <a href="#" class="footer-link"> allSports.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    <!-- MODAL  FRO REGISTRATION-->
+    <!-- data-toggle="modal" data-target="#modalLoginForm" -->
+
+    <form method="post" action="" name="registration">
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Register</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-4">
+          <div class="row text-center pb-4">
+              <label for="validationCustom01" class="col-md-5 col-sm-12 my-auto">First Name</label>
+                  <input class="col-md-7 col-sm-12 form-control" name="firstname" id="validationCustom01" placeholder="First name" type="text"/>
+          </div>
+  
+          <div class="row text-center pb-4">
+              <label for="validationCustom02" class="col-md-5 col-sm-12 my-auto">Last Name</label>
+                  <input class="col-md-7 col-sm-12 form-control" name="lastname" id="validationCustom02" placeholder="Last name" type="text"/>
+          </div>
+      
+          <div class="row text-center pb-4">
+              <label for="validationCustomUsername" class="col-md-5 col-sm-12 my-auto">Email</label>
+                  <input class="col-md-7 col-sm-12 form-control" name="email" id="validationCustomUsername" placeholder="Email Id" type="email" aria-describedby="inputGroupPrepend"/>
+          </div>
+      
+          <div class="row pb-4">
+            <div class="col-sm-12 text-center" >
+            <!--<button class="btn register-button">Register &rarr;</button>-->
+            <input class="btn" id="register-button" type="submit" value="Register"/>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+<!-- modal for blogs -->
+<!-- Button trigger modal --
+
+<!-- Modal -->
+
+<!-- football content of blog -->
+<div class="modal fade" id="modalBlogFootball" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="section__description modal-title" id="exampleModalLongTitle"><i class="fas fa-futbol"></i> FOOTBALL</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>For a number of football clubs, their place in the game sits in a perpetual yoyo between success and failure, agony and ecstasy, promotion and relegation. But what happens to fans of the self-appointed big clubs when they find themselves dropping down a division for the first time in living memory? Football is littered with riches to rags stories – slumbering giants who sleepwalk off cliffs and into the depth of their domestic pyramid.<br>
+
+          In October 2019, I travelled to Hamburg to see former European champions and German footballing superpower HSV during their first-ever season outside the Bundesliga. A gradual decline and years of near misses had preceded Hamburg’s relegation into the 2. Bundesliga. <br>
+          
+          The drop in division brought despair but also new challenges, and Hamburg fans would find themselves travelling to German footballing outposts. Towns and cities that would have once been pit stops or detours en route to Munich, Dortmund and Leverkusen were now awkward away fixtures for the fallen giants. <br>
+          
+          For years, Hamburg had prided themselves on their place at Germany’s top table; they were the last founding club of the Bundesliga to taste the heartbreak of relegation. The club even held a clock in the Volksparkstadion that counted how long they had been in the Bundesliga. Fifty-four years and 261 days. <br>
+          
+          Opposing fans, notably cross-city rivals St Pauli and Werder Bremen, delighted as the “dinosaurs: of the Bundesliga faced their own extinction. For St Pauli, it meant that the Hamburg derby would become a league fixture – and their bitter rivalry would take centre stage the following season. The presence of HSV in 2. Bundesliga certainly brought attention to the league, and domestically at least put the derby back on the map.<br>
+          
+          But a club the size of HSV’s appeal isn’t limited to the city of Hamburg, or even Germany. It has a global following, and dropping out of the top flight would make following HSV a less straightforward pastime. American-based Hamburg fan Blake has found it difficult to follow the second tier in the US: “On match days, the Bundesliga has a multicast of all the big games. In 2. Bundesliga, ESPN+ show one game from the lower league. Luckily it’s often Hamburg, but not always.” <br>
+          
+          </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- cricket content of blog -->
+<div class="modal fade" id="modalBlogCricket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="section__description modal-title" id="exampleModalLongTitle"><i class="fas fa-baseball-ball"></i> CRICKET</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          I have seen new players, men I might never have set eyes on but for the current situation. And I have seen old players in a new light. I will declare my interest and start with Yorkshire. The rest of the article can then be disinterested (as opposed to uninterested).</br>
+
+          Harry Brook: his figures don’t add up. He played a lot of first class cricket very young, and failed at the top of the order. One glorious century at Chelmsford showed the potential; a lot of low scores merely illustrate how difficult it is against County pros, and the Duke, early summer. Last year in the BWT he did well, and he is doing well again. Remember the name!</br>
+
+          Jordan Thompson: a left-handed batsman whom I saw make two centuries and three ducks, three years ago, in the 2nd XI. An exciting, if flawed batsman, only an occasional bowler, in Yorkshire’s eyes, at that stage. Now, in 2021, we fans are arguing whether Thompson, or Coad, or Patterson, is Yorkshire’s best bowler. Lovely fieldsman too, great potential.</br>
+
+          It has also been a joy to watch Adam Lyth back in the runs, to see Gary Ballance merely playing again, and to welcome Dom Bess on a permanent basis. I first saw Bess as a teenage off-spinner during a wonderful game of cricket at Taunton. Now, I think I have seen another, just as exciting, almost as young.</br>
+
+          Down to Hove we fly. If any County has a brilliant bunch of youngsters, that team is Sussex. The off-spinner in question is Jack Carson, twenty years old, Irish born and talent-spotted at an early age by Ed Joyce. Like Bess, be bowls with astonishing maturity, and he will bat well too, I am sure, on the evidence of just one innings.</br>
+
+          I saw James Bracey play, briefly, on-line during the BWT. Now he is scoring heavily again, yet another left-hander! They used to be rare. Yet another is Warwickshire’s Rob Yates, who has an old-fashioned look about the way he plays, straight and solid in defence, compact, organised. I hope they’re watching him. Then there’s Billy Root, who got a hundred on his return to Headingley.</br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- basketball content blog -->
+<div class="modal fade" id="modalBlogBasketball" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="section__description modal-title" id="exampleModalLongTitle"><i class="fas fa-basketball-ball"></i> BASKETBALL</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          For that first game of basketball in 1891, Naismith used as goals two half-bushel peach baskets, which gave the sport its name. The students were enthusiastic. After much running and shooting, William R. Chase made a midcourt shot—the only score in that historic contest. Word spread about the newly invented game, and numerous associations wrote Naismith for a copy of the rules, which were published in the January 15, 1892, issue of the Triangle, the YMCA Training School’s campus paper.</br>
+
+          While basketball is competitively a winter sport, it is played on a 12-month basis—on summer playgrounds, in municipal, industrial, and church halls, in school yards and family driveways, and in summer camps—often on an informal basis between two or more contestants. Many grammar schools, youth groups, municipal recreation centres, churches, and other organizations conduct basketball programs for youngsters of less than high school age. Jay Archer, of Scranton, Pennsylvania, introduced “biddy” basketball in 1950 for boys and girls under 12 years of age, the court and equipment being adjusted for size.</br>
+
+          In the early years the number of players on a team varied according to the number in the class and the size of the playing area. In 1894 teams began to play with five on a side when the playing area was less than 1,800 square feet (167.2 square metres); the number rose to seven when the gymnasium measured from 1,800 to 3,600 square feet (334.5 square metres) and up to nine when the playing area exceeded that. In 1895 the number was occasionally set at five by mutual consent; the rules stipulated five players two years later, and this number has remained ever since.</br>
+
+          Since Naismith and five of his original players were Canadians, it is not surprising that Canada was the first country outside the United States to play the game. Basketball was introduced in France in 1893, in England in 1894, in Australia, China, and India soon thereafter, and in Japan in 1900.</br>
+
+          While basketball helped swell the membership of YMCAs because of the availability of their gyms, within five years the game was outlawed by various associations because gyms that had been occupied by classes of 50 or 60 members were now monopolized by only 10 to 18 players. The banishment of the game induced many members to terminate their YMCA membership and to hire halls to play the game, thus paving the way to the professionalization of the sport.</br>
+
+          A soccer ball (football) was used for the first two years. In 1894 the first basketball was marketed. It was laced, measured close to 32 inches (81 cm), or about 4 inches (10 cm) larger than the soccer ball, in circumference, and weighed less than 20 ounces (567 grams). By 1948–49, when the laceless molded ball was made official, the size had been set at 30 inches (76 cm).</br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- GOOGLE SHEETS -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz-w7pZWFME-FGv6jkUKnU8SlcgfPbBHqWku7bmGUdhQeQag3zdddvJ-ckGbKfVMUrv/exec'
+  const form = document.forms['registration']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thanks for Contacting us..!"))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+  </body>
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbz-w7pZWFME-FGv6jkUKnU8SlcgfPbBHqWku7bmGUdhQeQag3zdddvJ-ckGbKfVMUrv/exec -->
